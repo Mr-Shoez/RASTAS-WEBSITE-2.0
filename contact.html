@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Rootsman Runnings Outanational</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <header class="main-header">
-            <div class="header-content">
-                <div class="logo-and-name">
-                    <a href="index.html" class="logo-link">
+     <!-- Google Fonts for typography -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="top-bar">
+                <div class="logo">
+                    <div class="nav-logo">
                         <svg
                             height="67px"
                             width="200px"
@@ -93,21 +101,30 @@
                                     d="M276.544,369.068c1.469,1.214,3.283,1.84,5.111,1.84c1.259,0,2.525-0.296,3.69-0.901 c44.999-23.342,87.699-58.709,123.486-102.276c35.774-43.551,62.463-92.646,77.181-141.981c0.919-3.083-0.093-6.418-2.573-8.469 c-2.479-2.05-5.944-2.421-8.801-0.938c-44.999,23.343-87.699,58.709-123.486,102.276c-35.774,43.551-62.463,92.646-77.181,141.981 C273.052,363.681,274.064,367.016,276.544,369.068z M363.542,228.794c29.646-36.09,64.149-66.292,100.68-88.256 c-14.865,40.727-38.054,80.827-67.781,117.017c-29.646,36.09-64.15,66.292-100.68,88.256 C310.626,305.084,333.815,264.983,363.542,228.794z"></path>
                             </g>
                         </svg>
-
-                        <span class="logo-text">Rootsman Runnings</span>
-                        <span class="logo-text-under">Outinatinal</span>
-                    </a>
+                    </div>
+                    <h1>Rootman Running Outnational</h1>
                 </div>
-                <nav class="main-nav">
-                    <a href="index.html">HOME</a>
-                    <a href="our-story.html">OUR STORY</a>
-                    <a href="showcase.html">SHOWCASE</a>
-                    <a href="careers.html">CAREERS</a>
-                    <a href="contact.html">CONTACT</a>
-                </nav>
+</head>
+<body>
+  <header>
+     <div class="header-right">
+                    <i class="fas fa-search"></i>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
             </div>
-        </header>
-
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="products.html">Shop Now</a></li>
+                    <li>
+                        <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+  </header>  
     <main>
         <section class="page-header">
             <h1>Get In Touch</h1>
@@ -117,11 +134,16 @@
             <div class="static-page-content">
                 <h2>Contact Us</h2>
                 <p>Have a question or a special request? Send us a message and we'll get back to you as soon as possible. Find our details below or use the form to reach out.</p>
-
-                 <div class="contact-details" style="margin-bottom: 3rem;">
-                    <p><strong>Phone:</strong> +27 78 657 2528</p>
-                    <p><strong>Address:</strong> 93 Highstreet Brixton, Johannesburg, South Africa</p>
-                </div>
+                  <div class="contact-container">
+                  <div class="map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.104309688108!2d27.994205874592215!3d-26.193284877083258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950be993629c27%3A0xd3bef905ff0516ab!2s93%20High%20St%2C%20Brixton%2C%20Johannesburg%2C%202019!5e0!3m2!1sen!2sza!4v1757792295638!5m2!1sen!2sza" width="600" 
+                     height="450"
+                     style="border:0;" 
+                     allowfullscreen="" 
+                     loading="lazy" 
+                     referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        
+      </div>
 
                 <form id="contact-form" action="#" method="POST">
                     <div class="form-group">
@@ -166,7 +188,7 @@
         </div>
         <button id="backToTop">Back To Top</button>
     </footer>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
     <script>
         const backToTopBtn = document.getElementById("backToTop");
 
