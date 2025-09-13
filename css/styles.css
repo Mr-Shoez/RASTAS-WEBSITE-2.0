@@ -1,0 +1,700 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header Container */
+.site-header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 5%;
+    box-sizing: border-box;
+
+    top: 0;
+    z-index: 1000;
+    height: 100%;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.nav-logo {
+    height: 43px;
+    position: relative;
+    right: 6rem;
+}
+
+.nav-logo::before {
+    position: absolute;
+
+    height: 100%;
+    background-color: #fff;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+/* Logo Styling */
+.logo h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    left: 3rem;
+    bottom: 1.6rem;
+}
+
+/* Header Right Section (Search + Button) */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .fa-search {
+    font-size: 18px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.learn-more-btn {
+    text-decoration: none;
+    color: #000;
+    border: 1.5px solid #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Main Navigation Styling */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.main-nav a .fa-chevron-down {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* Marketing Experience Section */
+.marketing-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.marketing-content {
+    flex-basis: 45%;
+    padding-right: 50px;
+    padding-top: 2px;
+    padding-bottom: 100px;
+    position: relative;
+    bottom: 3rem;
+}
+
+.marketing-content .subtitle,
+.subtitle.text-center {
+    font-size: 14px;
+    color: #888;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.subtitle.text-center {
+    text-align: center;
+}
+
+.marketing-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+    margin: 0 0 25px 0;
+}
+
+.marketing-content .description {
+    font-size: 16px;
+    color: #888;
+    line-height: 1.6;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+
+.marketing-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 50px;
+}
+
+.marketing-buttons .btn-primary,
+.connect-card .btn-primary {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 98px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.marketing-buttons .btn-primary:hover,
+.connect-card .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.marketing-buttons .btn-outline {
+    background-color: transparent;
+    color: #000;
+    border: 1.5px solid #000;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+.marketing-buttons .btn-outline:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Image Grid Animation */
+.image-grid-container {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.column-up .image-wrapper {
+    animation: scrollUp 40s linear infinite;
+}
+.column-down .image-wrapper {
+    animation: scrollDown 40s linear infinite;
+}
+
+/* Team Section Styling */
+.team-section {
+    padding: 100px 5%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #000;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    display: flex;
+    gap: 30px;
+    max-width: 550px;
+    text-align: left;
+}
+
+.member-photo {
+    width: 250px;
+    height: 300px;
+    background-color: #888;
+    flex-shrink: 0;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-role {
+    font-size: 14px;
+    color: #888;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.member-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.member-bio {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.member-social {
+    margin-top: auto;
+}
+
+.member-social a {
+    color: #000;
+    text-decoration: none;
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+    padding: px 5%;
+    background-color: #f8f9fa;
+}
+
+.testimonials-section .section-title {
+    margin-bottom: 80px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card:nth-child(even) {
+    margin-top: 60px;
+}
+
+.stars {
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.stars .fas {
+    color: #000;
+}
+
+.testimonial-text {
+    color: #888;
+    line-height: 1.7;
+    font-size: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0 0 25px 0;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.author-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.author-details p {
+    margin: 0;
+    line-height: 1.4;
+}
+.author-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
+.author-role {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Featured Clothing Section */
+.featured-clothing-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.clothing-slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 60px 0;
+}
+
+.clothing-track {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: calc((300px * 10) + (40px * 10));
+    animation: scrollLeft 40s linear infinite;
+}
+
+.clothing-card {
+    flex-shrink: 0;
+    width: 300px;
+    background-color: #888;
+}
+
+.clothing-card:nth-child(5n + 1) {
+    height: 400px;
+}
+.clothing-card:nth-child(5n + 2) {
+    height: 300px;
+}
+.clothing-card:nth-child(5n + 3) {
+    height: 450px;
+}
+.clothing-card:nth-child(5n + 4) {
+    height: 300px;
+}
+.clothing-card:nth-child(5n + 5) {
+    height: 400px;
+}
+
+.clothing-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-collection {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 15px 35px;
+    border-radius: 90px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-collection:hover {
+    transform: scale(1.05);
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Connect With Us Section */
+.connect-section {
+    padding: 100px 5%;
+    background-color: #f8f9fa;
+}
+
+.connect-section .section-title {
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: #888;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.connect-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.connect-card {
+    background-color: #fff;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex-basis: 400px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+.connect-icon {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.connect-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #000;
+}
+
+.connect-card p {
+    color: #888;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+}
+
+/* Final Footer Styling */
+.site-footer-final {
+    background-color: #fff;
+    padding: 50px 5%;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-logo-icon {
+    width: 53px;
+    height: 43px;
+    position: relative;
+    right: 6rem;
+    bottom: 1rem;
+}
+
+.footer-logo-icon::before {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+}
+
+.footer-logo-text {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-column {
+    flex: 1;
+}
+.footer-column.text-center {
+    text-align: center;
+}
+.footer-column.text-right {
+    text-align: right;
+}
+
+.footer-heading {
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+.footer-heading-large {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+    line-height: 1.3;
+}
+
+.footer-column p {
+    color: #888;
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social-icons a {
+    color: #fff;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #888;
+    font-size: 14px;
+}
+
+.footer-bottom-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer-bottom-links a:first-child {
+    margin-left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    .testimonial-card:nth-child(even) {
+        margin-top: 0;
+    }
+    .footer-main,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-column.text-right {
+        text-align: center;
+    }
+}
+
+/* --- Scroll Animation Classes --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out;
+    transition-delay: 0.2s; /* Adds a small delay to all animations */
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
