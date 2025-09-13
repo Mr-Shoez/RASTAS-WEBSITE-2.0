@@ -1,9 +1,26 @@
 /* General Body Styles */
+/* Add this to the top of your css/styles.css file */
+:root {
+    /* Primary Brand Colors */
+    --color-text-primary: #2d2d2d; /* Deep Charcoal instead of pure black */
+    --color-background: #fdfdfa; /* Warm Off-White */
+    --color-logo-green: #285d15; /* The existing green from your logo */
+
+    /* Subtle Rasta Accent Colors */
+    --color-accent-gold: #d4af37; /* A rich, muted gold/ochre */
+    --color-accent-red: #b04a46; /* An earthy, brick red */
+
+    /* Supporting Colors */
+    --color-border: #e0e0e0; /* For subtle dividers */
+    --color-white: #ffffff;
+}
+
+/* Then, update your body styles to use these variables */
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: var(--color-background); /* Use the new background */
+    color: var(--color-text-primary); /* Use the new text color */
     overflow-x: hidden;
 }
 
@@ -97,6 +114,8 @@ body {
     padding: 15px 0;
 }
 
+
+
 .main-nav ul {
     list-style: none;
     margin: 0;
@@ -114,6 +133,28 @@ body {
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.5px;
+}
+
+/* Navigation Link Hover */
+.main-nav a:hover {
+    color: var(--color-accent-gold);
+    /* Or a subtle underline */
+    /* text-decoration: underline; */
+    /* text-decoration-color: var(--color-accent-gold); */
+}
+
+/* Primary Button Hover */
+.btn-primary:hover {
+    background-color: var(--color-accent-red);
+    color: var(--color-white);
+    border-color: var(--color-accent-red);
+}
+
+/* Outline Button Hover */
+.btn-outline:hover {
+    background-color: var(--color-accent-gold);
+    color: var(--color-text-primary);
+    border-color: var(--color-accent-gold);
 }
 
 .main-nav a .fa-chevron-down {
@@ -206,10 +247,7 @@ body {
         color 0.3s;
 }
 
-.marketing-buttons .btn-outline:hover {
-    background-color: #000;
-    color: #fff;
-}
+
 
 /* Import font if needed */
 @import url("https://fonts.googleapis.com/css?family=Roboto:700");
@@ -1050,4 +1088,3 @@ body {
     background-color: #000;
     color: #fff;
 }
-

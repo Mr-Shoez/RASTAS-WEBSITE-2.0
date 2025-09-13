@@ -1,17 +1,112 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!-- ================ CORE METADATA & BROWSER SETUP ================== -->
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rootman Running Outanational</title>
-        <link rel="stylesheet" href="css/styles.css" />
-        <!-- Google Fonts for typography -->
+        <title>Rootsman Runnings: Custom Rasta Wear | Brixton, Johannesburg</title>
+        <meta
+            name="description"
+            content="Discover authentic, hand-crafted Rasta wear at Rootsman Runnings. From our heart in Brixton, Johannesburg, we create one-of-a-kind custom clothing that tells a story." />
+        <meta
+            name="keywords"
+            content="custom clothing Johannesburg, Rasta wear South Africa, hand-crafted apparel, Brixton clothing store, conscious fashion, Rootsman Runnings, cultural clothing, bespoke tailor, Rastafari lifestyle, unique clothing design" />
+        <link rel="canonical" href="https://www.rootsmanrunnings.co.za/index.html" />
+
+        <!-- ==================== FAVICONS & PWA MANIFEST ==================== -->
+
+        <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+        <link rel="manifest" href="/icons/manifest.json" />
+
+        <!-- =================== OPEN GRAPH & SOCIAL MEDIA =================== -->
+
+        <meta property="og:title" content="Rootsman Runnings: Custom Rasta Wear | Brixton, Johannesburg" />
+        <meta
+            property="og:description"
+            content="Discover authentic, hand-crafted Rasta wear at Rootsman Runnings. From our heart in Brixton, Johannesburg, we create one-of-a-kind custom clothing that tells a story." />
+        <meta property="og:image" content="https://www.rootsmanrunnings.co.za/images/social/og-home.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://www.rootsmanrunnings.co.za/index.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_ZA" />
+
+        <!-- ========================= TWITTER CARD ========================== -->
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Rootsman Runnings: Custom Rasta Wear | Brixton, Johannesburg" />
+        <meta
+            name="twitter:description"
+            content="Discover authentic, hand-crafted Rasta wear at Rootsman Runnings. From our heart in Brixton, Johannesburg, we create one-of-a-kind custom clothing that tells a story." />
+        <meta name="twitter:image" content="https://www.rootsmanrunnings.co.za/images/social/og-home.webp" />
+        <meta name="twitter:site" content="@RootsmanRunnings" />
+        <meta name="twitter:creator" content="@RootsmanRunnings" />
+
+        <!-- =================== FONTS, STYLES & PERFORMANCE ================= -->
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-        <!-- Font Awesome for icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="preload" href="css/styles.css" as="style" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- ================ SEARCH ENGINE DIRECTIVES & VERIFICATION ======== -->
+
+        <meta name="robots" content="index, follow" />
+        <!-- Meta Verification: Replace 'YOUR_CODE' with actual codes -->
+        <meta name="google-site-verification" content="YOUR_GOOGLE_CODE" />
+        <meta name="msvalidate.01" content="YOUR_BING_CODE" />
+
+        <!-- =================== STRUCTURED DATA (JSON-LD) =================== -->
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ClothingStore",
+                "name": "Rootsman Runnings Outanational",
+                "image": "https://www.rootsmanrunnings.co.za/images/social/og-home.webp",
+                "@id": "https://www.rootsmanrunnings.co.za",
+                "url": "https://www.rootsmanrunnings.co.za",
+                "telephone": "+27738843203",
+                "email": "timealan734@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Brixton Johannesburg South Africa",
+                    "addressLocality": "Johannesburg",
+                    "addressCountry": "ZA"
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                        "opens": "09:00",
+                        "closes": "21:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Sunday",
+                        "opens": "07:00",
+                        "closes": "20:45"
+                    }
+                ],
+                "sameAs": [
+                    "https://www.facebook.com/people/Rootsman-Runnings-Outanational/100063771954778/",
+                    "https://www.instagram.com/time_alan"
+                ]
+            }
+        </script>
     </head>
+
     <body>
         <header class="site-header">
             <div class="top-bar">
@@ -185,18 +280,20 @@
                             <p class="member-role">OWNER</p>
                             <h3 class="member-name">Mr Rootsman</h3>
                             <p class="member-bio">
-                                He's one of the owners of Rootsman Running Outanational, a clothing store in Brixton that focuses on Rasta culture and fashion.
-                                He's a well known figure in the community and believes in interacting with his customers.
+                                Sed omnis iste natus voluptatem accusantium laudantium totam rem aperiam eaque ipsa ab
+                                illo inventore veritatis et architecto beatae vitae.
                             </p>
-                            <div class="member-social">
+                            <div class="member-social" style="position: relative; bottom: 1.5rem" >
+                                <a href="https://www.facebook.com/share/1CwevbyLni/"
+                                    ><i class="fab fa-facebook"></i
+                                ></a>
+                                <a href="https://www.instagram.com/time_alan?igsh=MW83ZdwOTZmNmhxaw=="
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
 
-                                <a href="https://www.facebook.com/share/1CwevbyLni/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/time_alan?igsh=MW83ZdwOTZmNmhxaw=="><i class="fab fa-instagram"></i></a>
-
-                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-youtube"></i></a>
-
                             </div>
                         </div>
                     </div>
@@ -211,101 +308,108 @@
                                 Sed omnis iste natus voluptatem accusantium laudantium totam rem aperiam eaque ipsa ab
                                 illo inventore veritatis et architecto beatae vitae.
                             </p>
-                            <div class="member-social">
+                            <div class="member-social" style="position: relative; bottom: 1.5rem;">
                                 <a href=""><i class="fab fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/time_alan?igsh=MW83ZdwOTZmNmhxaw=="><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/time_alan?igsh=MW83ZdwOTZmNmhxaw=="
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-   <section class="testimonials-section">
+            <section class="testimonials-section">
                 <div class="animate-on-scroll">
-                    <h2 class="section-title">Hear it from our customers...</h2>
-            <div class="testimonial-grid">
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
-                            ><i class="far fa-star"></i><i class="far fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            I bought some Rasta clothing from Rootsman Running the other day and I'm really happy with what I got.<br>
-                            The clothes look fresh and feel super comfortable. The people that were working there were chill and helpful, which I really liked.<br>
-                            Only reason I gave them this rating is cause the checkout took a bit longer than expected.
-                        </p>
-                        <div class="testimonial-author">
-                            <div>
-                                <img src="images/download.jpeg" alt="Ayanda Nkosi" class="author-photo" />
+                    <h2 class="section-title" style="position: relative; top: 3rem;">Hear it from our customers...</h2>
+                    <div class="testimonial-grid" style="margin: 10rem; position: relative; top: -3rem;">
+                        <div class="testimonial-card animate-on-scroll">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
+                                ><i class="far fa-star"></i><i class="far fa-star"></i>
                             </div>
-                            <div class="author-details">
-                                <p class="author-name">Ayanda Nkosi</p>
-                                <p class="author-role">Customer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
-                            ><i class="fas fa-star"></i><i class="far fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            I passed by Rootsman Running and decided to grab some Rasta wear, and mi haffi say,
-                            it did not dissapoint.<br>
-                            The colors, the design everything capture the real spirit of di Rasta lifestyle.<br>
-                            It feels authentic, not just clothes but a statement of culture and pride. Though wait at the counter tek likke time.<br>
-                            But overall, mi satisfied with my purchase, I'll be back for sure.
-                        </p>
-                        <div class="testimonial-author">
-                            <div>
-                                <img src="images/Yman.jpg" alt="Kwame Mensah" class="author-photo"/>
-                            </div>
-                            <div class="author-details">
-                                <p class="author-name">Kwame Mensah</p>
-                                <p class="author-role">Customer</p>
+                            <p class="testimonial-text">
+                                I bought some Rasta clothing from Rootsman Running the other day and I'm really happy
+                                with what I got.<br />
+                                The clothes look fresh and feel super comfortable. The people that were working there
+                                were chill and helpful, which I really liked.<br />
+                            </p>
+                            <div class="testimonial-author">
+                                <div>
+                                    <img src="images/download.jpeg" alt="Ayanda Nkosi" class="author-photo" />
+                                </div>
+                                <div class="author-details">
+                                    <p class="author-name">Ayanda Nkosi</p>
+                                    <p class="author-role">Customer</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
-                            ><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            I visited Rootsman Running while working on my school project about Rasta culture,
-                            and honestly, it was a great experience.<br>The clothes and accessories helped me understand the  culture better
-                            because they weren't just stylish but also meaningful.<br>The people in the shop were so kind, they explained things to me, and made sure I found
-                            what I needed.<br>It made my project way better, and I felt more connected to the culture. Big up to Rootsman Running for that!
-
-                        </p>
-                        <div class="testimonial-author">
-                            <div>
-                                <img src="images/Mfundo-Radebe.jpg" alt="Sipho Mkhize" class="author-photo"/>
+                        <div class="testimonial-card animate-on-scroll" style="position: relative; top: 4rem; right: 1.5rem;">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
+                                ><i class="fas fa-star"></i><i class="far fa-star"></i>
                             </div>
-                            <div class="author-details">
-                                <p class="author-name">Sipho Mkhize</p>
-                                <p class="author-role">High school student</p>
+                            <p class="testimonial-text">
+                                I passed by Rootsman Running and decided to grab some Rasta wear, and mi haffi say, it
+                                did not dissapoint.<br />
+                                The colors, the design everything capture the real spirit of di Rasta lifestyle.<br />
+                                It feels authentic, not just clothes but a statement of culture and pride.<br />
+                                Overall, mi satisfied with my purchase, I'll be back for sure.
+                            </p>
+                            <div class="testimonial-author">
+                                <div>
+                                    <img src="images/Yman.jpg" alt="Kwame Mensah" class="author-photo" />
+                                </div>
+                                <div class="author-details">
+                                    <p class="author-name">Kwame Mensah</p>
+                                    <p class="author-role">Customer</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
-                            ><i class="fas fa-star"></i><i class="far fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            Starting my journey at Rootsman Running has been nothing short of inspiring.<br>
-                            As a new staff member, I’ve been welcomed warmly and given the chance to learn not just about the clothing, 
-                            but about the deeper meaning behind Rasta culture.<br>The teamwork is amazing, and the
-                            passion everyone shows for the culture makes working here feel more like family than a job.<br>
-                            I’m excited to grow with Rootsman Running and be part of something that celebrates such a rich heritage.
-                        </p>
-                        <div class="testimonial-author">
-                            <div>
-                                <img src="images/Thabo.jpg" class="author-photo" alt="Thabo Ndlovu"/>
+                        <div class="testimonial-card animate-on-scroll" style="position: relative; bottom: 10rem;">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
+                                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
-                            <div class="author-details">
-                                <p class="author-name">Thabo Ndlovu</p>
-                                <p class="author-role">Staff member</p>
+                            <p class="testimonial-text">
+                                I visited Rootsman Running while working on my school project about Rasta culture, and
+                                honestly, it was a great experience.<br />The clothes and accessories helped me
+                                understand the culture better because they weren't just stylish but also meaningful.<br />The
+                                people in the shop were so kind, they explained things to me, and made sure I found what
+                                I needed.<br />It made my project way better, and I felt more connected to the culture.
+                                Big up to Rootsman Running for that!
+                            </p>
+                            <div class="testimonial-author">
+                                <div>
+                                    <img src="images/Mfundo-Radebe.jpg" alt="Sipho Mkhize" class="author-photo" />
+                                </div>
+                                <div class="author-details">
+                                    <p class="author-name">Sipho Mkhize</p>
+                                    <p class="author-role">High school student</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card animate-on-scroll" style="position: relative; bottom: 1rem; right: 1.5rem;">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
+                                ><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Starting my journey at Rootsman Running has been nothing short of inspiring.<br />
+                                As a new staff member, I’ve been welcomed warmly and given the chance to learn not just
+                                about the clothing, but about the deeper meaning behind Rasta culture.<br />The teamwork
+                                is amazing, and the passion everyone shows for the culture makes working here feel more
+                                like family than a job.<br />
+                                I’m excited to grow with Rootsman Running and be part of something that celebrates such
+                                a rich heritage.
+                            </p>
+                            <div class="testimonial-author">
+                                <div>
+                                    <img src="images/Thabo.jpg" class="author-photo" alt="Thabo Ndlovu" />
+                                </div>
+                                <div class="author-details">
+                                    <p class="author-name">Thabo Ndlovu</p>
+                                    <p class="author-role">Staff member</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -354,7 +458,7 @@
 
             <section class="connect-section">
                 <div class="animate-on-scroll">
-                    <h2 class="section-title">Connect with Us</h2>
+                    <h2 class="section-title">Connect Us</h2>
                     <p class="section-description">We are always glad to hear from you.</p>
                 </div>
                 <div class="connect-cards-container">
@@ -471,7 +575,10 @@
                 <div class="footer-column text-center">
                     <h3 class="footer-heading-large">FOLLOW US FOR LATEST<br />UPDATES & NEWS</h3>
                     <div class="footer-social-icons">
-                        <a href="https://www.facebook.com/people/Rootsman-Runnings-Outanational/100063771954778/?rdid=nhP4cquxjvoyOSZ3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CwevbyLni%2F"><i class="fab fa-facebook"></i></a>
+                        <a
+                            href="https://www.facebook.com/people/Rootsman-Runnings-Outanational/100063771954778/?rdid=nhP4cquxjvoyOSZ3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CwevbyLni%2F"
+                            ><i class="fab fa-facebook"></i
+                        ></a>
                         <a href=""><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
