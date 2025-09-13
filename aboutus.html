@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
-      
         <!-- ================ CORE METADATA & BROWSER SETUP ================== -->
-      
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Our Story | Rootsman Runnings Outanational | From Brixton</title>
@@ -15,17 +14,15 @@
             content="Rootsman Runnings story, about Rootsman Runnings, Brixton history, Rastafari culture Johannesburg, conscious community, local artisans South Africa, handmade clothing story, authentic Rasta wear" />
         <link rel="canonical" href="https://www.rootsmanrunnings.co.za/aboutus.html" />
 
-      
         <!-- ==================== FAVICONS & PWA MANIFEST ==================== -->
-      
+
         <link rel="icon" href="/icons/favicon.ico" sizes="any" />
         <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
         <link rel="manifest" href="/icons/manifest.json" />
 
-      
         <!-- =================== OPEN GRAPH & SOCIAL MEDIA =================== -->
-      
+
         <meta property="og:title" content="Our Story | Rootsman Runnings Outanational | From Brixton" />
         <meta
             property="og:description"
@@ -37,9 +34,8 @@
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_ZA" />
 
-      
         <!-- ========================= TWITTER CARD ========================== -->
-      
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Our Story | Rootsman Runnings Outanational | From Brixton" />
         <meta
@@ -49,26 +45,26 @@
         <meta name="twitter:site" content="@RootsmanRunnings" />
         <meta name="twitter:creator" content="@RootsmanRunnings" />
 
-      
         <!-- =================== FONTS, STYLES & PERFORMANCE ================= -->
-      
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap"
-            rel="stylesheet" />
-        <link rel="preload" href="styles.css" as="style" />
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="preload" href="css/styles.css" as="style" />
         <link rel="stylesheet" href="css/styles.css" />
-        <link rel="manifest" href="/icons/manifest.json">
 
-      
         <!-- ================ SEARCH ENGINE DIRECTIVES & VERIFICATION ======== -->
-      
+
         <meta name="robots" content="index, follow" />
 
-      
         <!-- =================== STRUCTURED DATA (JSON-LD) =================== -->
-      
+
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -102,10 +98,10 @@
         </script>
     </head>
     <body>
-        <header class="main-header">
-            <div class="header-content">
-                <div class="logo-and-name">
-                    <a href="index.html" class="logo-link">
+        <header class="site-header">
+            <div class="top-bar">
+                <div class="logo">
+                    <div class="nav-logo">
                         <svg
                             height="67px"
                             width="200px"
@@ -174,97 +170,277 @@
                                 <path
                                     d="M298.221,187.591c0-60.652-12.073-119.453-34.915-170.046c-1.295-2.872-4.154-4.718-7.306-4.718 c-3.152,0-6.01,1.846-7.306,4.718c-22.841,50.593-34.915,109.394-34.915,170.046c0,60.014,11.828,118.21,34.205,168.44v135.125 c0,4.427,3.589,8.017,8.017,8.017c4.427,0,8.017-3.589,8.017-8.017V356.032C286.394,305.802,298.221,247.605,298.221,187.591z M256,41.604c17.172,44.405,26.188,94.469,26.188,145.987S273.171,289.173,256,333.578c-17.171-44.404-26.188-94.468-26.188-145.987 S238.83,86.009,256,41.604z"></path>
                                 <path
-                                    d="M234.666,383.662c-31.245-19.984-69.288-34.222-110.018-41.174c-40.71-6.949-81.656-6.203-118.41,2.16 c-3.151,0.717-5.564,3.256-6.119,6.439c-0.555,3.184,0.855,6.39,3.579,8.131c31.245,19.984,69.288,34.222,110.018,41.174 c18.424,3.145,36.895,4.714,55.005,4.714c21.906,0,43.285-2.296,63.404-6.874c3.151-0.717,5.564-3.256,6.119-6.439 C238.8,388.61,237.39,385.403,234.666,383.662z M116.415,384.588L116.415,384.588c-30.848-5.265-60.01-14.897-85.505-28.156 c28.99-4.035,60.058-3.428,91.042,1.861c30.847,5.265,60.01,14.897,85.504,28.156C178.464,390.484,147.398,389.877,116.415,384.588z "></path>
+                                    d="M234.666,383.662c-31.245-19.984-69.288-34.222-110.018-41.174c-40.71-6.949-81.656-6.203-118.41,2.16 c-3.151,0.717-5.564,3.256-6.119,6.439c-0.555,3.184,0.855,6.39,3.579,8.131c31.245,19.984,69.288,34.222,110.018,41.174 c18.424,3.145,36.895,4.714,55.005,4.714c21.906,0,43.285-2.296,63.404-6.874c3.151-0.717,5.564-3.256,6.119-6.439 C238.8,388.61,27.39,385.403,234.666,383.662z M116.415,384.588L116.415,384.588c-30.848-5.265-60.01-14.897-85.505-28.156 c28.99-4.035,60.058-3.428,91.042,1.861c30.847,5.265,60.01,14.897,85.504,28.156C178.464,390.484,147.398,389.877,116.415,384.588z "></path>
                                 <path
-                                    d="M231.259,415.6c-23.496-2.688-47.097,0.886-68.249,10.337c-21.284,9.51-38.779,24.381-50.596,43.005 c-1.479,2.331-1.655,5.26-0.465,7.751c1.191,2.492,3.579,4.195,6.322,4.509c5.077,0.58,10.158,0.869,15.219,0.869 c18.361,0,36.449-3.798,53.03-11.206c21.284-9.51,38.779-24.381,50.596-43.005c1.479-2.331,1.655-5.26,0.465-7.751 C236.39,417.618,234.001,415.914,231.259,415.6z M179.979,456.226c-14.192,6.342-29.661,9.662-45.4,9.807 c9.354-10.643,21.237-19.319,34.972-25.457c14.192-6.342,29.661-9.662,45.4-9.807C205.597,441.411,193.714,450.088,179.979,456.226z "></path>
+                                    d="M231.259,415.6c-23.496-2.688-47.097,0.886-68.249,10.337c-21.284,9.51-38.779,24.381-50.596,43.005 c-1.479,2.331-1.655,5.26-0.465,7.751c1.191,2.492,3.579,4.195,6.322,4.509c5.077,0.58,10.158,0.869,15.219,0.869 c18.361,0,36.449-3.798,53.03-11.206c21.284-9.51,38.779-24.381,50.596-43.005c1.479-2.331-1.655,5.26,0.465-7.751 C236.39,417.618,234.001,415.914,231.259,415.6z M179.979,456.226c-14.192,6.342-29.661,9.662-45.4,9.807 c9.354-10.643,21.237-19.319,34.972-25.457c14.192-6.342,29.661-9.662,45.4-9.807C205.597,441.411,193.714,450.088,179.979,456.226z "></path>
                                 <path
-                                    d="M160.849,218.618c-35.786-43.566-78.487-78.932-123.486-102.276c-2.857-1.483-6.322-1.113-8.801,0.938 c-2.48,2.051-3.492,5.386-2.573,8.469c14.719,49.334,41.407,98.43,77.181,141.981c35.786,43.566,78.487,78.932,123.486,102.276 c1.165,0.604,2.431,0.901,3.69,0.901c1.829,0,3.643-0.625,5.111-1.84c2.48-2.051,3.492-5.386,2.573-8.469 C223.311,311.264,196.622,262.168,160.849,218.618z M115.56,257.553c-29.727-36.188-52.917-76.29-67.781-117.016 c36.531,21.966,71.035,52.167,100.68,88.256c29.727,36.189,52.915,76.29,67.781,117.017 C179.708,323.845,145.205,293.643,115.56,257.553z"></path>
+                                    d="M160.849,218.618c-35.786-43.566-78.487-78.932-123.486-102.276c-2.857-1.483-6.322-1.113-8.801,0.938 c-2.48,2.051-3.492,5.386-2.573,8.469c14.719,49.334,41.407,98.43,77.181,141.981c35.786,43.566,78.487,78.932,123.486,102.276 c1.165,0.604,2.431,0.901,3.69,0.901c1.829,0,3.643-0.625,5.111-1.84c2.48-2.051-3.492-5.386,2.573-8.469 C223.311,311.264,196.622,262.168,160.849,218.618z M115.56,257.553c-29.727-36.188-52.917-76.29-67.781-117.016 c36.531,21.966,71.035,52.167,100.68,88.256c29.727,36.189,52.915,76.29,67.781,117.017 C179.708,323.845,145.205,293.643,115.56,257.553z"></path>
                                 <path
                                     d="M511.881,351.088c-0.556-3.184-2.968-5.723-6.119-6.439c-36.756-8.362-77.701-9.108-118.41-2.16 c-40.73,6.952-78.773,21.19-110.018,41.174c-2.722,1.741-4.133,4.947-3.579,8.131c0.556,3.184,2.968,5.723,6.119,6.439 c20.123,4.578,41.496,6.874,63.404,6.874c18.108,0,36.583-1.569,55.005-4.714l0,0c40.73-6.952,78.773-21.19,110.018-41.174 C511.026,357.478,512.436,354.272,511.881,351.088z M395.588,384.588L395.588,384.588c-30.983,5.289-62.051,5.897-91.041,1.861 c25.495-13.259,54.656-22.89,85.504-28.156c30.983-5.289,62.051-5.896,91.041-1.861 C455.596,369.692,426.435,379.322,395.588,384.588z"></path>
                                 <path
                                     d="M348.991,425.938c-21.151-9.451-44.75-13.026-68.249-10.337c-2.743,0.313-5.132,2.017-6.322,4.509 c-1.191,2.492-1.015,5.419,0.465,7.751c11.817,18.623,29.312,33.494,50.596,43.005c16.583,7.41,34.666,11.207,53.03,11.206 c5.059,0,10.143-0.289,15.219-0.869c2.743-0.313,5.132-2.017,6.323-4.509c1.191-2.492,1.015-5.419-0.465-7.751 C387.771,450.318,370.275,435.448,348.991,425.938z M332.022,456.226c-13.735-6.138-25.618-14.814-34.972-25.457 c15.739,0.146,31.208,3.466,45.4,9.807c13.735,6.138,25.618,14.814,34.972,25.457C361.685,465.887,346.212,462.567,332.022,456.226z "></path>
                                 <path
-                                    d="M276.544,369.068c1.469,1.214,3.283,1.84,5.111,1.84c1.259,0,2.525-0.296,3.69-0.901 c44.999-23.342,87.699-58.709,123.486-102.276c35.774-43.551,62.463-92.646,77.181-141.981c0.919-3.083-0.093-6.418-2.573-8.469 c-2.479-2.05-5.944-2.421-8.801-0.938c-44.999,23.343-87.699,58.709-123.486,102.276c-35.774,43.551-62.463,92.646-77.181,141.981 C273.052,363.681,274.064,367.016,276.544,369.068z M363.542,228.794c29.646-36.09,64.149-66.292,100.68-88.256 c-14.865,40.727-38.054,80.827-67.781,117.017c-29.646,36.09-64.15,66.292-100.68,88.256 C310.626,305.084,333.815,264.983,363.542,228.794z"></path>
+                                    d="M276.544,369.068c1.469,1.214,3.283,1.84,5.111,1.84c1.259,0,2.525-0.296,3.69-0.901 c44.999-23.342,87.699-58.709,123.486-102.276c35.774-43.551,62.463-92.646,77.181-141.981c0.919-3.083-0.093-6.418-2.573-8.469 c-2.479-2.05-5.944-2.421-8.801-0.938c-44.999,23.343-87.699,58.709-123.486,102.276c-35.774-43.551-62.463-92.646-77.181,141.981 C273.052,363.681,274.064,367.016,276.544,369.068z M363.542,228.794c29.646-36.09,64.149-66.292,100.68-88.256 c-14.865,40.727-38.054,80.827-67.781,117.017c-29.646-36.09-64.15-66.292-100.68,88.256 C310.626,305.084,333.815,264.983,363.542,228.794z"></path>
                             </g>
                         </svg>
-
-                        <span class="logo-text">Rootsman Runnings</span>
-                        <span class="logo-text-under">Outinatinal</span>
-                    </a>
+                    </div>
+                    <h1>Rootman Running Outnational</h1>
                 </div>
-                <nav class="main-nav">
-                    <a href="index.html">HOME</a>
-                    <a href="aboutus.html">OUR STORY</a>
-                    <a href="showcase.html">SHOWCASE</a>
-                    <a href="careers.html">CAREERS</a>
-                    <a href="contact.html">CONTACT</a>
-                </nav>
+                <div class="header-right">
+                    <i class="fas fa-search"></i>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
             </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="products.html">Shop Now</a></li>
+                    <li>
+                        <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
-            <section class="page-header">
-                <div class="our-story-header">
-                    <h1>Our Story</h1>
-                    <section class="static-page">
-                        <div class="page-body">
-                            <h2 id="page-body-header">From Brixton, With Love.</h2>
-                            <p>
-                                Rootsman Runnings Outanational began not as a business, but as a passion. From a small
-                                stall at 93 Highstreet Brixton, we wanted to share the vibrant culture and conscious
-                                lifestyle of Rastafari with our community in Johannesburg. We believe that what you wear
-                                is an extension of who you are—a statement of your beliefs, your history, and your
-                                identity.
-                            </p>
-
-                            <p>
-                                We started by hand-crafting items we loved, pieces that were authentic and made with
-                                quality materials. Our focus was always on craftsmanship and culture, ensuring every
-                                piece tells a story. From clothing and jewellery to smoking pipes and scarfs, each item
-                                is a celebration of our heritage.
-                            </p>
+            <section class="about-section">
+                <div class="about-container">
+                    <div class="years-display">
+                        <h1>1987 - 2021</h1>
+                    </div>
+                    <div class="why-choose-us">
+                        <p class="sample-subtitle">SAMPLE SUBTITLE</p>
+                        <h2>Why Choose Us</h2>
+                        <div class="choose-us-content">
+                            <div class="choose-us-text">
+                                <p>
+                                    Rootsman Runnings Outanational began not as a business, but as a passion. From a
+                                    small stall at 93 Highstreet Brixton, we wanted to share the vibrant culture and
+                                    conscious lifestyle of Rastafari with our community in Johannesburg.
+                                </p>
+                            </div>
+                            <div class="choose-us-text">
+                                <p>
+                                    Today, while we have grown, our core values remain the same. We manufacture and
+                                    supply goods that we are proud of. We are more than just a shop; we are a hub for
+                                    the community, a place where like-minded individuals can connect.
+                                </p>
+                            </div>
                         </div>
-                        <div class="page-body">
-                            <h2 id="page-body-header-2">Quality, Community, and Consciousness</h2>
-                            <p>
-                                Today, while we have grown, our core values remain the same. We manufacture and supply
-                                goods that we are proud of. We are more than just a shop; we are a hub for the
-                                community, a place where like-minded individuals can connect. Our 5.7K followers on
-                                Facebook are not just customers; they are our extended family.
-                            </p>
-                            <p>
-                                We are committed to sustainable practices, supporting local artisans, and providing
-                                goods that are not only beautiful but also meaningful. Thank you for being a part of our
-                                journey.
-                            </p>
+                        <div class="signature">
+                            <img src="images/signature.png" alt="Signature" />
                         </div>
-                    </section>
+                    </div>
+                    <div class="timeline-section">
+                        <h2 class="timeline-title">Our Journey</h2>
+                        <p class="timeline-subtitle">
+                            From a small stall to a community hub, this is our story.
+                        </p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">1987</div>
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>REALITY</h3>
+                                    <p>Our humble beginnings as a small stall in Brixton, Johannesburg.</p>
+                                    <div class="timeline-icon">
+                                        <i class="fas fa-umbrella"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">1994</div>
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>DESIGN</h3>
+                                    <p>We start designing and crafting our own unique Rasta wear.</p>
+                                    <div class="timeline-icon">
+                                        <i class="fas fa-layer-group"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2015</div>
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>SECURE</h3>
+                                    <p>We establish ourselves as a secure and trusted brand in the community.</p>
+                                    <div class="timeline-icon">
+                                        <i class="fas fa-paint-roller"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>LANDING</h3>
+                                    <p>Launching our online presence to connect with a wider audience.</p>
+                                    <div class="timeline-icon">
+                                        <i class="fas fa-stopwatch"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer class="main-footer">
-            <div class="container footer-content">
-                <div class="footer-column">
-                    <h4>VISIT US</h4>
-                    <p>93 Highstreet Brixton<br />Johannesburg, South Africa</p>
+        <footer class="site-footer-final animate-on-scroll">
+            <div class="footer-logo-container">
+                <div class="footer-logo-icon">
+                    <svg
+                        height="67px"
+                        width="200px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="-51.2 -51.2 614.40 614.40"
+                        xml:space="preserve"
+                        fill="#000000"
+                        stroke="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke="#CCCCCC"
+                            stroke-width="13.312000000000001"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path
+                                    style="fill: #8ce16e"
+                                    d="M221.796,187.591c0,61.668,12.629,118.958,34.205,166.747 c21.576-47.789,34.204-105.079,34.204-166.747S277.576,68.633,256,20.844C234.425,68.634,221.796,125.924,221.796,187.591z"></path>
+                                <path
+                                    style="fill: #8ce16e"
+                                    d="M115.065,392.49c41.112,7.017,80.825,5.766,115.282-2.075 c-29.262-18.716-65.936-33.007-107.047-40.025s-80.825-5.764-115.282,2.075C37.28,371.182,73.953,385.473,115.065,392.49z"></path>
+                                <path
+                                    style="fill: #8ce16e"
+                                    d="M183.249,463.545c20.556-9.185,36.52-23.309,47.099-39.981c-21.282-2.435-43.51,0.507-64.066,9.693 c-20.556,9.185-36.52,23.309-47.099,39.981C140.464,475.672,162.693,472.731,183.249,463.545z"></path>
+                                <path
+                                    style="fill: #8ce16e"
+                                    d="M109.364,262.642c36.369,44.275,78.515,78.217,120.982,100.247 c-13.9-46.591-39.326-94.91-75.694-139.184S76.139,145.488,33.671,123.458C47.571,170.049,72.996,218.368,109.364,262.642z"></path>
+                                <path
+                                    style="fill: #8ce16e"
+                                    d="M396.937,392.49c-41.112,7.017-80.825,5.766-115.282-2.075 c29.262-18.716,65.936-33.007,107.047-40.025s80.825-5.766,115.282,2.075C474.721,371.182,438.048,385.473,396.937,392.49z"></path>
+                                <path
+                                    style="fill: #8ce16e"
+                                    d="M328.752,463.545c-20.556-9.185-36.52-23.309-47.099-39.981c21.282-2.435,43.51,0.507,64.066,9.693 c20.556,9.185,36.52,23.309,47.099,39.981C371.537,475.672,349.308,472.731,328.752,463.545z"></path>
+                                <path
+                                    style="fill: #8ce16e"
+                                    d="M402.636,262.642c-36.368,44.275-78.514,78.217-120.982,100.247 c13.9-46.591,39.326-94.91,75.694-139.184s78.515-78.218,120.982-100.248C464.431,170.049,439.005,218.368,402.636,262.642z"></path>
+                            </g>
+                            <g>
+                                <path
+                                    style="fill: #9bf57d"
+                                    d="M33.671,123.458l196.676,239.432c-13.9-46.591-39.326-94.909-75.694-139.184 S76.138,145.488,33.671,123.458z"></path>
+                                <path
+                                    style="fill: #9bf57d"
+                                    d="M256,20.844v333.494c21.576-47.789,34.204-105.079,34.204-166.747S277.576,68.633,256,20.844z"></path>
+                                <path
+                                    style="fill: #9bf57d"
+                                    d="M402.637,262.642c36.367-44.275,61.794-92.594,75.692-139.184L281.654,362.89 C324.121,340.859,366.268,306.917,402.637,262.642z"></path>
+                                <path
+                                    style="fill: #9bf57d"
+                                    d="M8.017,352.465l222.329,37.95c-29.262-18.716-65.936-33.007-107.047-40.025 C82.188,343.374,42.474,344.626,8.017,352.465z"></path>
+                                <path
+                                    style="fill: #9bf57d"
+                                    d="M388.702,350.391c-41.113,7.017-77.785,21.308-107.047,40.025l222.329-37.95 C469.526,344.626,429.813,343.374,388.702,350.391z"></path>
+                                <path
+                                    style="fill: #9bf57d"
+                                    d="M166.281,433.257c-20.556,9.185-36.521,23.309-47.099,39.98l111.165-49.672 C209.066,421.13,186.837,424.072,166.281,433.257z"></path>
+                                <path
+                                    style="fill: #9bf57d"
+                                    d="M345.721,433.257c-20.556-9.185-42.786-12.128-64.067-9.693l111.165,49.672 C382.241,456.567,366.276,442.442,345.721,433.257z"></path>
+                            </g>
+                            <path
+                                d="M298.221,187.591c0-60.652-12.073-119.453-34.915-170.046c-1.295-2.872-4.154-4.718-7.306-4.718 c-3.152,0-6.01,1.846-7.306,4.718c-22.841,50.593-34.915,109.394-34.915,170.046c0,60.014,11.828,118.21,34.205,168.44v135.125 c0,4.427,3.589,8.017,8.017,8.017c4.427,0,8.017-3.589,8.017-8.017V356.032C286.394,305.802,298.221,247.605,298.221,187.591z M256,41.604c17.172,44.405,26.188,94.469,26.188,145.987S273.171,289.173,256,333.578c-17.171-44.404-26.188-94.468-26.188-145.987 S238.83,86.009,256,41.604z"></path>
+                            <path
+                                d="M234.666,383.662c-31.245-19.984-69.288-34.222-110.018-41.174c-40.71-6.949-81.656-6.203-118.41,2.16 c-3.151,0.717-5.564,3.256-6.119,6.439c-0.555,3.184,0.855,6.39,3.579,8.131c31.245,19.984,69.288,34.222,110.018,41.174 c18.424,3.145,36.895,4.714,55.005,4.714c21.906,0,43.285-2.296,63.404-6.874c3.151-0.717,5.564-3.256,6.119-6.439 C238.8,388.61,237.39,385.403,234.666,383.662z M116.415,384.588L116.415,384.588c-30.848-5.265-60.01-14.897-85.505-28.156 c28.99-4.035,60.058-3.428,91.042,1.861c30.847,5.265,60.01,14.897,85.504,28.156C178.464,390.484,147.398,389.877,116.415,384.588z "></path>
+                            <path
+                                d="M231.259,415.6c-23.496-2.688-47.097,0.886-68.249,10.337c-21.284,9.51-38.779,24.381-50.596,43.005 c-1.479,2.331-1.655,5.26-0.465,7.751c1.191,2.492,3.579,4.195,6.322,4.509c5.077,0.58,10.158,0.869,15.219,0.869 c18.361,0,36.449-3.798,53.03-11.206c21.284-9.51,38.779-24.381,50.596-43.005c1.479-2.331,1.655,5.26,0.465-7.751 C236.39,417.618,234.001,415.914,231.259,415.6z M179.979,456.226c-14.192,6.342-29.661,9.662-45.4,9.807 c9.354-10.643,21.237-19.319,34.972-25.457c14.192-6.342,29.661-9.662,45.4-9.807C205.597,441.411,193.714,450.088,179.979,456.226z "></path>
+                            <path
+                                d="M160.849,218.618c-35.786-43.566-78.487-78.932-123.486-102.276c-2.857-1.483-6.322-1.113-8.801,0.938 c-2.48,2.051-3.492,5.386-2.573,8.469c14.719,49.334,41.407,98.43,77.181,141.981c35.786,43.566,78.487,78.932,123.486,102.276 c1.165,0.604,2.431,0.901,3.69,0.901c1.829,0,3.643-0.625,5.111-1.84c2.48-2.051-3.492-5.386,2.573-8.469 C223.311,311.264,196.622,262.168,160.849,218.618z M115.56,257.553c-29.727-36.188-52.917-76.29-67.781-117.016 c36.531,21.966,71.035,52.167,100.68,88.256c29.727-36.189,52.915,76.29,67.781,117.017 C179.708,323.845,145.205,293.643,115.56,257.553z"></path>
+                            <path
+                                d="M511.881,351.088c-0.556-3.184-2.968-5.723-6.119-6.439c-36.756-8.362-77.701-9.108-118.41-2.16 c-40.73,6.952-78.773,21.19-110.018,41.174c-2.722,1.741-4.133,4.947-3.579,8.131c0.556,3.184,2.968,5.723,6.119,6.439 c20.123,4.578,41.496,6.874,63.404,6.874c18.108,0,36.583-1.569,55.005-4.714l0,0c40.73-6.952,78.773-21.19,110.018-41.174 C511.026,357.478,512.436,354.272,511.881,351.088z M395.588,384.588L395.588,384.588c-30.983,5.289-62.051,5.897-91.041,1.861 c25.495-13.259,54.656-22.89,85.504-28.156c30.983-5.289,62.051-5.896,91.041-1.861 C455.596,369.692,426.435,379.322,395.588,384.588z"></path>
+                            <path
+                                d="M348.991,425.938c-21.151-9.451-44.75-13.026-68.249-10.337c-2.743,0.313-5.132,2.017-6.322,4.509 c-1.191,2.492-1.015,5.419,0.465,7.751c11.817,18.623,29.312,33.494,50.596,43.005c16.583,7.41,34.666,11.207,53.03,11.206 c5.059,0,10.143-0.289,15.219-0.869c2.743-0.313,5.132-2.017,6.323-4.509c1.191-2.492,1.015-5.419-0.465-7.751 C387.771,450.318,370.275,435.448,348.991,425.938z M332.022,456.226c-13.735-6.138-25.618-14.814-34.972-25.457 c15.739,0.146,31.208,3.466,45.4,9.807c13.735,6.138,25.618,14.814,34.972,25.457C361.685,465.887,346.212,462.567,332.022,456.226z "></path>
+                            <path
+                                d="M276.544,369.068c1.469,1.214,3.283,1.84,5.111,1.84c1.259,0,2.525-0.296,3.69-0.901 c44.999-23.342,87.699-58.709,123.486-102.276c35.774-43.551,62.463-92.646,77.181-141.981c0.919-3.083-0.093-6.418-2.573-8.469 c-2.479-2.05-5.944-2.421-8.801-0.938c-44.999,23.343-87.699,58.709-123.486,102.276c-35.774-43.551-62.463-92.646-77.181,141.981 C273.052,363.681,274.064,367.016,276.544,369.068z M363.542,228.794c29.646-36.09,64.149-66.292,100.68-88.256 c-14.865,40.727-38.054,80.827-67.781,117.017c-29.646-36.09-64.15-66.292-100.68,88.256 C310.626,305.084,333.815,264.983,363.542,228.794z"></path>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
+                <span class="footer-logo-text">Rootman Running Outinational</span>
+            </div>
+            <div class="footer-main">
                 <div class="footer-column">
-                    <h4>CONNECT</h4>
-                    <p>+27 78 657 2528<br />inquiries@rootsmanrunnings.co.za</p>
+                    <h3 class="footer-heading">CONTACT</h3>
+                    <p>Brixton Johannesburg South Africa , Johannesburg, South Africa</p>
+                    <p>timealan734@gmail.com</p>
+                    <p>+27 73 884 3203</p>
                 </div>
-                <div class="footer-column">
-                    <h4>NAVIGATE</h4>
-                    <a href="index.html">Home</a>
-                    <a href="aboutus.html">Our Story</a>
-                    <a href="showcase.html">Showcase</a>
-                    <a href="careers.html">Careers</a>
-                    <a href="contact.html">Contact</a>
+                <div class="footer-column text-center">
+                    <h3 class="footer-heading-large">FOLLOW US FOR LATEST<br />UPDATES & NEWS</h3>
+                    <div class="footer-social-icons">
+                        <a
+                            href="https://www.facebook.com/people/Rootsman-Runnings-Outanational/100063771954778/?rdid=nhP4cquxjvoyOSZ3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CwevbyLni%2F"
+                            ><i class="fab fa-facebook"></i
+                        ></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column text-right">
+                    <h3 class="footer-heading">HOURS</h3>
+                    <p>Monday to Friday: 09:00 – 21:00</p>
+                    <p>Weekdays: 09:00 – 21:00</p>
+                    <p>Sunday: 07:00 – 20:45</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Rootsman Runnings Outanational. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="index.html">HOMEPAGE</a>
+                    <a href="aboutus.html">ABOUT US</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <div class="footer-copyright">© 2025 Rootsman Runnings Outanational — 2025 All Right Reserved</div>
+                <div class="footer-bottom-links">
+                    <a href="#">PRIVACY POLICY</a>
+                    <a href="#">TERMS OF USE</a>
+                </div>
             </div>
         </footer>
+
+    
+        <!-- JavaScript for Scroll Animations -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("is-visible");
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    {
+                        threshold: 0.1, // Animate when 10% of the element is visible
+                    }
+                );
+
+                const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+                elementsToAnimate.forEach((element) => {
+                    observer.observe(element);
+                });
+            });
+        </script>
     </body>
 </html>
