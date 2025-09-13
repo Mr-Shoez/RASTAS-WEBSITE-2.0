@@ -211,6 +211,105 @@ body {
     color: #fff;
 }
 
+/* Import font if needed */
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+
+/* ----------------- Headline Animations ----------------- */
+@keyframes showTopText {
+    0% {
+        transform: translateY(100%);
+    }
+    40%,
+    60% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes showBottomText {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated-title {
+    font-family: Roboto, Arial, sans-serif;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.animated-title > div {
+    overflow: hidden;
+    position: relative;
+    height: auto; /* let text decide height */
+}
+
+.animated-title > div div {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transform: translateY(100%); /* initial state */
+}
+
+.animated-title > .text-top {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+.animated-title > .text-top div {
+    animation: showTopText 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.animated-title > .text-bottom div {
+    animation: showBottomText 0.5s ease forwards;
+    animation-delay: 1.75s;
+    transform: translateY(-100%);
+}
+
+/* ----------------- Paragraph Fade In ----------------- */
+.fade-in-text {
+    opacity: 0;
+    animation: fadeInText 1s ease forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------- Buttons Fade In ----------------- */
+.fade-in-buttons {
+    opacity: 0;
+    animation: fadeInButtons 1s ease forwards;
+    animation-delay: 3.2s;
+}
+
+@keyframes fadeInButtons {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Image Grid Animation */
 .image-grid-container {
     flex-basis: 50%;
