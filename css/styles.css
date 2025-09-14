@@ -26,6 +26,25 @@ body {
     z-index: 999;
     height: 100%;
 }
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+#search-bar {
+  display: none; /* hidden at first */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-left: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#search-bar.active {
+  display: inline-block; /* show when active */
+}
+
 
 /* Top Bar Styling */
 .top-bar {
@@ -87,9 +106,9 @@ body {
     border-radius: 50px;
     font-weight: bold;
     font-size: 14px;
-    transition:
-        background-color 0.3s,
-        color 0.3s;
+    transition: 0.3s ease;
+    background-color: 0.3s;
+    color : lightgray;
 }
 
 .learn-more-btn:hover {
@@ -795,9 +814,9 @@ body {
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
-    transition:
-        opacity 0.6s ease-out,
-        transform 0.6s ease-out;
+    transition:0.3 ease ;
+    opacity :0.6s ease-out;
+    transform:rotate(0.5px) ;
     transition-delay: 0.2s; /* Adds a small delay to all animations */
 }
 
@@ -806,7 +825,7 @@ body {
     transform: translateY(0);
 }
 
-.form-group {
+.form-group { 
     margin-bottom: 2rem;
 }
 .form-group label {
@@ -824,9 +843,8 @@ body {
     border-radius: 8px;
     font-family: var(--font-body);
     font-size: 1rem;
-    transition:
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: 0.3s ease; 
+    
 }
 .form-group input:focus,
 .form-group textarea:focus,
@@ -975,10 +993,11 @@ body {
 
 /* Header Section */
 .page-header {
-  background: linear-gradient(to right, #8ce16e, #9bf57d);
+  background-color: darkolivegreen;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
   color: #111;
+  margin-bottom:0px ;
 }
 
 .page-header h1 {
@@ -993,26 +1012,26 @@ body {
 /* Our Story Content */
 .static-page {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 60px auto;
   padding: 0 20px;
+  margin-top: 0px;
 }
 
 .page-body {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .page-body h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2rem;
-  color: #228B22;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   border-left: 5px solid #B22222;
   padding-left: 12px;
 }
 
 .page-body p {
   font-size: 1.05rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #444;
 }
 
